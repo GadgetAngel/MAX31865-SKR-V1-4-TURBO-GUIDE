@@ -663,10 +663,7 @@ For **Marlin bugfix-2.0.x version or later versions of Marlin**:
 
 Here is the wiring diagram for the **Adafruit MAX31865 with PT100 via Hardware SPI on the SKR V1.4 TURBO board when the default hardware SPI bus is the same as the ONBOARD Micro-SD Card Reader**:
 
-You need to **tap into the micro-SD card reader ONBOARD the MCU board** then use: 
-JSER Micro SD TF Memory Card Kit Male to Female Extension Adapter (https://www.amazon.com/gp/product/B071DKCK47/)  You will have to solder on three wires to the locations shown below and it only costs $4.00 on Amazon.com:
- 
-![Micro_SD_CARD_Adapter Board to tap into SPI lines for the SD card reader with Labels](https://user-images.githubusercontent.com/33468777/99324341-d575c480-2828-11eb-8eb5-d82ef75daabc.jpg) Now all you need is one free I/O pin to specify the Chip Select for the MAX31865.
+Just use the SPI header labeled "SPI1" located on the SKR V1.4 TURBO board to access the micro-SD card Reader's SPI lines. Now all you need is one free I/O pin to specify the Chip Select for the MAX31865.
 
 You can click on the below image and the browser will download the .jpg file or you can click on this URL address: https://github.com/GadgetAngel/MAX31865-SKR-V1-4-TURBO-GUIDE/blob/main/images/One%20PT100%20with%20One%20MAX31865%20boards%20in%20Hardware%20SPI%20with%20SD%20card%20reader%20on%20SKR%20V1.4%20TURBO%20board%20_%20Wiring%20Diagram%20Part4.jpg
 
