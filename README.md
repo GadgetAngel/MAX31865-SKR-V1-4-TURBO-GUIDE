@@ -174,7 +174,7 @@ You need to **solder two bridges** on the MAX31865 board.  Marlin will only read
 
 ---
 
-7. If you want to use the Adafruit MAX31865 board for PT100 sensor or PT1000 sensor with your SKR V1.4 board then **ENSURE that the Adafruit MAX31865 library is _my modified Adafruit MAX31865 library_ called Adafruit-MAX31865-V1.1.0-Mod-M** by doing the following:
+7. If you want to use the Adafruit MAX31865 board for PT100 sensor or PT1000 sensor with your SKR V1.4 TURBO board then **ENSURE that the Adafruit MAX31865 library is _my modified Adafruit MAX31865 library_ called Adafruit-MAX31865-V1.1.0-Mod-M** by doing the following:
 
 Check that in **platformio.ini file** the following line exists in [common] under `lib_deps           =` and feature dependencies `[features]`:
 `MAX6675_._IS_MAX31865     = Adafruit MAX31865 library@~1.1.0`
@@ -395,15 +395,22 @@ Ensure in **configuration_adv.h** file:
    *
    * :[ 'LCD', 'ONBOARD', 'CUSTOM_CABLE' ]
    */
-  //#define SDCARD_CONNECTION LCD    //this is set for LCD like it is in the pins_BTT_SKR_V1_4.h file, just incase this get enabled. Leave it disabled for now
+  //#define SDCARD_CONNECTION LCD    //this is set for LCD like it is in the pins_BTT_SKR_V1_4.h file, just incase this gets enabled. Leave it disabled for now
 ```
 
 In **platformio.ini** file:
 ```
 	default_envs = LPC1769
 under [features] section of platformio.ini file:
-	replace `MAX6675_._IS_MAX31865   = Adafruit MAX31865 library@~1.1.0` with
-	`MAX6675_._IS_MAX31865    = https://github.com/GadgetAngel/Adafruit-MAX31865-V1.1.0-Mod-M.git`
+
+	Replace 
+	
+	MAX6675_._IS_MAX31865   = Adafruit MAX31865 library@~1.1.0
+	
+	With
+	
+	MAX6675_._IS_MAX31865    = https://github.com/GadgetAngel/Adafruit-MAX31865-V1.1.0-Mod-M.git
+	
 use the latest bugfix-2.0.x branch of Marlin (this will only work with the latest bugfix-2.0.x branch)
 
 this is what the env:common_LPC needs to look like:
@@ -564,15 +571,22 @@ set in **configuration_adv.h** file:
    *
    * :[ 'LCD', 'ONBOARD', 'CUSTOM_CABLE' ]
    */
-  //#define SDCARD_CONNECTION ONBOARD    //this is set for ONBOARD like it is in the pins_BTT_SKR_V1_4.h file, just in case this get enabled. Leave it disabled for now
+  //#define SDCARD_CONNECTION ONBOARD    //this is set for ONBOARD like it is in the pins_BTT_SKR_V1_4.h file, just in case this gets enabled. Leave it disabled for now
 ```
 
 In **platformio.ini** file:
 ```
 	default_envs = LPC1769
 under [features] section of platformio.ini file:
-	replace `MAX6675_._IS_MAX31865   = Adafruit MAX31865 library@~1.1.0` with
-	`MAX6675_._IS_MAX31865    = https://github.com/GadgetAngel/Adafruit-MAX31865-V1.1.0-Mod-M.git`
+
+	Replace 
+	
+	MAX6675_._IS_MAX31865   = Adafruit MAX31865 library@~1.1.0 
+	
+	With
+	
+	MAX6675_._IS_MAX31865    = https://github.com/GadgetAngel/Adafruit-MAX31865-V1.1.0-Mod-M.git
+	
 use the latest bugfix-2.0.x branch of Marlin (this will only work with the latest bugfix-2.0.x branch)
 
 this is what the env:common_LPC needs to look like (you are adding -DTEMP_MODE=3 build flag):
@@ -710,15 +724,22 @@ Ensure in **configuration_adv.h** file:
    *
    * :[ 'LCD', 'ONBOARD', 'CUSTOM_CABLE' ]
    */
-  //#define SDCARD_CONNECTION LCD    //this is set for LCD like it is in the pins_BTT_SKR_V1_4.h file, just incase this get enabled. Leave it disabled for now
+  //#define SDCARD_CONNECTION LCD    //this is set for LCD like it is in the pins_BTT_SKR_V1_4.h file, just incase this gets enabled. Leave it disabled for now
 ```
 
 In **platformio.ini** file:
 ```
 	default_envs = LPC1769
 under [features] section of platformio.ini file:
-	replace `MAX6675_._IS_MAX31865   = Adafruit MAX31865 library@~1.1.0` with
-	`MAX6675_._IS_MAX31865    = https://github.com/GadgetAngel/Adafruit-MAX31865-V1.1.0-Mod-M.git`
+
+	Replace 
+	
+	MAX6675_._IS_MAX31865   = Adafruit MAX31865 library@~1.1.0 
+	
+	With
+	
+	MAX6675_._IS_MAX31865    = https://github.com/GadgetAngel/Adafruit-MAX31865-V1.1.0-Mod-M.git
+	
 use the latest bugfix-2.0.x branch of Marlin (this will only work with the latest bugfix-2.0.x branch)
 
 this is what the env:common_LPC needs to look like:
@@ -895,15 +916,22 @@ Ensure in **configuration_adv.h** file:
    *
    * :[ 'LCD', 'ONBOARD', 'CUSTOM_CABLE' ]
    */
-  //#define SDCARD_CONNECTION LCD    //this is set for LCD like it is in the pins_BTT_SKR_V1_4.h file, just incase this get enabled. Leave it disabled for now
+  //#define SDCARD_CONNECTION LCD    //this is set for LCD like it is in the pins_BTT_SKR_V1_4.h file, just incase this gets enabled. Leave it disabled for now
 ```
 
 In **platformio.ini** file:
 ```
 	default_envs = LPC1769
 under [features] section of platformio.ini file:
-	replace `MAX6675_._IS_MAX31865   = Adafruit MAX31865 library@~1.1.0` with
-	`MAX6675_._IS_MAX31865    = https://github.com/GadgetAngel/Adafruit-MAX31865-V1.1.0-Mod-M.git`
+
+	Replace 
+	
+	MAX6675_._IS_MAX31865   = Adafruit MAX31865 library@~1.1.0
+	
+	With
+	
+	MAX6675_._IS_MAX31865    = https://github.com/GadgetAngel/Adafruit-MAX31865-V1.1.0-Mod-M.git
+	
 use the latest bugfix-2.0.x branch of Marlin (this will only work with the latest bugfix-2.0.x branch)
 
 this is what the env:common_LPC needs to look like:
