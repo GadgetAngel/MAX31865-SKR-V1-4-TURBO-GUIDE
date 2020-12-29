@@ -356,7 +356,7 @@ JSER Micro SD TF Memory Card Kit Male to Female Extension Adapter (https://www.a
 
 ## HARDWARE SPI for Adafruit MAX31865 and SKR V1.4 TURBO MCU board
 
-12. If you want to use **Hardware SPI** for **Adafruit MAX31865 (for PT100 or PT1000)** then you must know which SPI bus will be the default hardware SPI bus for the board.  For the SKR V1.4 TURBO board the default hardware SPI bus is EXP2 or SPI bus #0.  You have to find a way to access the default hardware SPI bus' MOSI, MISO and SCK lines.  To access these lines for the SKR V1.4 board, use a clamp-on flat ribbon cable connector (https://www.digikey.com/product-detail/en/te-connectivity-amp-connectors/1658622-1/AKC10B-ND/825411). 
+12. If you want to use **Hardware SPI** for **Adafruit MAX31865 (for PT100 or PT1000)** then you must know which SPI bus will be the default hardware SPI bus for the board.  For the SKR V1.4 TURBO board the default hardware SPI bus is EXP2 or SPI bus #0.  You have to find a way to access the default hardware SPI bus' MOSI, MISO and SCK lines.  To access these lines for the SKR V1.4 board, you have two obtions 1) use a clamp-on flat ribbon cable connector (https://www.digikey.com/product-detail/en/te-connectivity-amp-connectors/1658622-1/AKC10B-ND/825411) or 2) use the SPI1 header on the SKR V1.4 TURBO board.
 
 <img src="https://raw.githubusercontent.com/GadgetAngel/MAX31865-SKR-V1-4-TURBO-GUIDE/main/images/Default%20Hardware%20SPI%20Hack%20info%20Block%20for%20SKR%20V1.4%20TURBO.jpg?raw=true" />
 
