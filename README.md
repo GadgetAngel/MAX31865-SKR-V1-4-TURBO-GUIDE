@@ -247,7 +247,7 @@ and in configuratio_adv.h file:
 
 ```
 
-Below is a table which indicates the **default hardware SPI bus for the BTT SKR series of boards**:
+Below is a table which indicates the **default hardware SPI bus**, or connector, for **the BTT SKR series of boards**:
 ```
      board                      pins-file                              SDCARD_CONNECTION setting                      default HW SPI BUS number
 ---------------           ------------------                       -------------------------------                    --------------------------
