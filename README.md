@@ -72,7 +72,7 @@ The below wiring diagram for PT100 using Analog ADC input **using 3.3 VDC for th
 
 ---
 
-# The information contained in [1, 4-14] are for the Adafruit MAX31865 board (PT100/PT100 sensors) with the SKR V1.4 TURBO MCU board
+# The information contained in [1, 4-14] are for the Adafruit MAX31865 board (PT100/PT1000 sensors) with the SKR V1.4 TURBO MCU board
 
 4. You can click on the below image and the browser will download the .jpg file or you can click on this URL address: https://github.com/GadgetAngel/MAX31865-SKR-V1-4-TURBO-GUIDE/blob/main/images/General%20Information%20for%20SKR%20V1.4%20TURBO%20board%20Part1.jpg
 
