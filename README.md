@@ -356,7 +356,7 @@ JSER Micro SD TF Memory Card Kit Male to Female Extension Adapter (https://www.a
 
 ## HARDWARE SPI for Adafruit MAX31865 and SKR V1.4 TURBO MCU board
 
-12. If you want to use **Hardware SPI** for **Adafruit MAX31865 (for PT100 or PT1000)** then you must know which SPI bus will be the default hardware SPI bus for the board.  For the SKR V1.4 TURBO board the default hardware SPI bus is EXP2 or SPI bus #0.  You have to find a way to access the default hardware SPI bus' MOSI, MISO and SCK lines.  To access these lines for the SKR V1.4 TURBO board, you have two obtions 1) use a clamp-on flat ribbon cable connector (https://www.digikey.com/product-detail/en/te-connectivity-amp-connectors/1658622-1/AKC10B-ND/825411) or 2) use the SPI1 header on the SKR V1.4 TURBO board.
+12. If you want to use **Hardware SPI** for **Adafruit MAX31865 (for PT100 or PT1000)** then you must know which SPI bus will be the default hardware SPI bus for the board.  For the SKR V1.4 TURBO board the default hardware SPI bus is EXP2 or SPI bus #0.  You have to find a way to access the default hardware SPI bus' MOSI, MISO and SCK lines.  To access these lines for the SKR V1.4 TURBO board, you have to use a clamp-on flat ribbon cable connector (https://www.digikey.com/product-detail/en/te-connectivity-amp-connectors/1658622-1/AKC10B-ND/825411)
 
 <img src="https://raw.githubusercontent.com/GadgetAngel/MAX31865-SKR-V1-4-TURBO-GUIDE/main/images/Default%20Hardware%20SPI%20Hack%20info%20Block%20for%20SKR%20V1.4%20TURBO.jpg?raw=true" />
 
@@ -523,9 +523,7 @@ For **Marlin bugfix-2.0.x version or later versions of Marlin**:
 ```
 ### }
 
-Here is the wiring diagram for the Adafruit **MAX31865 with PT100 via Hardware SPI on EXP2 connector for the SKR V1.4 TURBO board**.  To access the Hardware SPI lines for the SKR V1.4 TURBO board, you can use a **tap for the EXP2 flat ribbon cable** by using https://www.digikey.com/product-detail/en/te-connectivity-amp-connectors/1658622-1/AKC10B-ND/825411. If you use the tap, orient the clamp on connector so that it is in the same orientation as the one already installed on the end of the flat ribbon cable that gets plugged into the EXP2 socket of the SKR V1.4 TURBO board. This way you will be able to keep straight which PINs are which. I oriented mine to be upside down just like the connector that is already on the end that plugs into the EXP2 socket of the SKR V1.4 TURBO board. 
-
-The other option you have to access the EXP2 SPI lines is to use the SPI1 header that is located on the SKR V1.4 Turbo board.  Now all you need is one free I/O pin to specify the Chip Select for the MAX31865.
+Here is the wiring diagram for the Adafruit **MAX31865 with PT100 via Hardware SPI on EXP2 connector for the SKR V1.4 TURBO board**.  To access the Hardware SPI lines for the SKR V1.4 TURBO board, you must use a **tap for the EXP2 flat ribbon cable** by using https://www.digikey.com/product-detail/en/te-connectivity-amp-connectors/1658622-1/AKC10B-ND/825411. Orient the clamp on connector so that it is in the same orientation as the one already installed on the end of the flat ribbon cable that gets plugged into the EXP2 socket of the SKR V1.4 TURBO board. This way you will be able to keep straight which PINs are which. I oriented mine to be upside down just like the connector that is already on the end that plugs into the EXP2 socket of the SKR V1.4 TURBO board. 
 
 You can click on the below image and the browser will download the .jpg file or you can click on this URL address: https://github.com/GadgetAngel/MAX31865-SKR-V1-4-TURBO-GUIDE/blob/main/images/One%20PT100%20with%20One%20MAX31865%20boards%20in%20Hardware%20SPI%20with%20EXP2%20on%20SKR%20V1.4%20TURBO%20board%20_%20Wiring%20Diagram%20Part5.jpg
 
@@ -853,7 +851,7 @@ For **Marlin bugfix-2.0.x version or later versions of Marlin**:
 ```
 ### }
 
-Here is the wiring diagram for the Adafruit **2 MAX31865 with 2 PT100 via Hardware SPI on EXP2 connector for the SKR V1.4 TURBO board**.  To access the Hardware SPI lines for the SKR V1.4 TURBO board, you need to **tap into the EXP2 flat ribbon cable** use: 
+Here is the wiring diagram for the Adafruit **2 MAX31865 with 2 PT100 via Hardware SPI on EXP2 connector for the SKR V1.4 TURBO board**.  To access the Hardware SPI lines for the SKR V1.4 TURBO board, you need to use a **tap for the EXP2 flat ribbon cable** use: 
 https://www.digikey.com/product-detail/en/te-connectivity-amp-connectors/1658622-1/AKC10B-ND/825411
 Orient the clamp on connector so that it is in the same orientation as the one already installed on the end of the flat ribbon cable that gets plugged into the EXP2 socket of the SKR V1.4 TURBO board. This way you will be able to keep straight which PINs are which. I oriented mine to be upside down just like the connector that is already on the end that plugs into the EXP2 socket of the SKR V1.4 TURBO board. Now all you need is one free I/O pin to specify the Chip Select for the MAX31865.
 
