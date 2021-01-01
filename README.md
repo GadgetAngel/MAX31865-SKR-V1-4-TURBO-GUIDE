@@ -52,7 +52,7 @@ LCD_PINS_RS is Register select (command/data) or software SPI signal SS for EXP1
 
 ---
 
-3. Translation table to be used (or Thermistor table) depends on the power you supply to the amplifier board and the ADC reference voltage of the MCU (**THIS DOES NOT APPLY FOR THE MAX31865 BOARD, please skip this section 3**. I leave it here for information if you want to use an analog connection for the PT100 sensor like using E3D PT100 amplifier board):
+3. Translation table to be used (or Thermistor table) depends on the power you supply to the amplifier board and the ADC reference voltage of the MCU (**THIS DOES NOT APPLY FOR THE MAX31865 BOARD, please skip this section 3**. I leave it here for information if you want to use an analog connection for **the PT100 sensor like using E3D's PT100 amplifier board**):
 
 - 1. Use table 20: When the power supply for the PT100/PT1000 Amplifier board is equal to the ADC reference voltage for the MCU.
 --  For SKR PRO V1.1/V1.2, SKR V1.3/V1.4/V1.4 Turbo, GTR V1.0, M5 V1.0 all use 3.3 VDC as the ADC reference voltage for the MCU.  Therefore use table 20 when the PT100/PT1000 Amplifier board is powered by 3.3VDC
@@ -63,11 +63,19 @@ LCD_PINS_RS is Register select (command/data) or software SPI signal SS for EXP1
 
 The below wiring diagram for PT100 using Analog ADC input **using 5V DC for the PT100 amplifier board** but the MCU board (SKR V1.4 TURBO board) uses 3.3 VDC ADC reference voltage, therefore the **Thermistor table to use for this is Table 21**:
 
+This is for a hook up to the **TFT connector and 5VDC power for the E3D PT100 amplifier board**:
 <img src="https://raw.githubusercontent.com/GadgetAngel/MAX31865-SKR-V1-4-TURBO-GUIDE/main/images/PT100%20Analog%20hook%20up%20with%205%20VDC%20power%20for%20SKR%20V1.4%20TURBO.jpg?raw=true" />
+
+This is for a hook up to the **SPI header and 5VDC power for the E3D PT100 amplifier board**:
+<img src="https://raw.githubusercontent.com/GadgetAngel/MAX31865-SKR-V1-4-TURBO-GUIDE/main/images/PT100%20Analog%20hook%20up%20with%205%20VDC%20power%20for%20SKR%20V1.4%20TURBO%20to%20SPI%20header%20P0.26_AD0.3_AOUT_RXD3.jpg?raw=true" />
 
 The below wiring diagram for PT100 using Analog ADC input **using 3.3 VDC for the PT100 amplifier board** but the MCU board (SKR V1.4 TURBO board) uses 3.3 VDC ADC reference voltage, therefore the **Thermistor table to use for this is Table 20**:
 
+This is for a hook up to the **TFT connector and 3.3VDC power for the E3D PT100 amplifier board**:
 <img src="https://raw.githubusercontent.com/GadgetAngel/MAX31865-SKR-V1-4-TURBO-GUIDE/main/images/PT100%20Analog%20hook%20up%20with%203.3VDC%20power%20for%20SKR%20V1.4%20TURBO.jpg?raw=true" />
+
+This is for a hook up to the **SPI header and 3.3VDC power for the E3D PT100 amplifier board**:
+<img src="https://raw.githubusercontent.com/GadgetAngel/MAX31865-SKR-V1-4-TURBO-GUIDE/main/images/PT100%20Analog%20hook%20up%20with%203.3%20VDC%20power%20for%20SKR%20V1.4%20TURBO%20to%20SPI%20header%20P0.26_AD0.3_AOUT_RXD3.jpg?raw=true" />
 
 
 ---
